@@ -1,0 +1,2 @@
+#define c(v) scanf("%d",&v);
+int main(){int T,n,i,j,t;c(T)while(T--){int l[102]={0},k[102]={0},m=0;c(n)for(i=1;i<=n;i++){for(j=0;j++<i;){c(l[j])l[j]+=k[j-1]>k[j]?k[j-1]:k[j];m=l[j]>m?l[j]:m;}memcpy(k,l,408);}printf("%d\n",m);}}
