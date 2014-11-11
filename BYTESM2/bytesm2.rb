@@ -11,6 +11,7 @@ T.times do
 			line[i] += @last_line.slice([i-1,0].max,i==0 ? 2 : 3).max
 		end unless not defined? @last_line
 
+		puts line.inspect
 		@last_line = line
 	end
 
